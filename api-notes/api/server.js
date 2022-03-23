@@ -1,17 +1,16 @@
-//import express from "express";
-const express = require("express");
-//import noteRoute from "./notes/routes/note.route.js"
+import express from "express";
+//const express = require("express");
+import noteRoute from "./notes/routes/note.route.js"
 
-
-//export class Server{
-class Server{
+export class Server{
+//class Server{
   constructor(hostName, port, nameApp){
     this._hostname = hostName;
     this._port = port;
     this._name = nameApp;
     this._api = express();
     this.initMiddlewares();
-    //this.initRoutes();
+    this.initRoutes();
   }
 
   initMiddlewares(){
@@ -39,4 +38,4 @@ class Server{
   }
 }
 
-module.exports = Server;
+//module.exports = Server;

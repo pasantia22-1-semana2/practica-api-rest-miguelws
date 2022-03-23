@@ -3,7 +3,7 @@ import express from "express";
 const routerNote = express.Router();
 
 //ruta para obtener todas las notas
-Router.get("/", (req, rest)=>{
+routerNote.get("/", (req, rest)=>{
     rest.json({message: "route GET"});
 });
 
